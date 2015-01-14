@@ -1,0 +1,4 @@
+app/code/local/Studioraz/MobileDetect                       app/code/local/Studioraz/MobileDetect
+app/etc/modules/Studioraz_MobileDetect.xml                  app/etc/modules/Studioraz_MobileDetect.xml
+app/locale/en_US/Studioraz_MobileDetect.csv                 app/locale/en_US/Studioraz_MobileDetect.csv
+lib/Mobiledetect                                            lib/Mobiledetect
