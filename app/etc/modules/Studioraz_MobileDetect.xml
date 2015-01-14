@@ -9,9 +9,9 @@
 -->
 <config>
     <modules>
-        <Optimiseweb_MobileDetect>
+        <Studioraz_MobileDetect>
             <active>true</active>
-            <codePool>community</codePool>
-        </Optimiseweb_MobileDetect>
+            <codePool>local</codePool>
+        </Studioraz_MobileDetect>
     </modules>
 </config>

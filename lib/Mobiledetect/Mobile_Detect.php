@@ -121,32 +121,32 @@ class Mobile_Detect
      */
     protected static $mobileHeaders = array(
 
-            'HTTP_ACCEPT'                  => array('matches' => array(
-                                                                        // Opera Mini; @reference: http://dev.opera.com/articles/view/opera-binary-markup-language/
-                                                                        'application/x-obml2d',
-                                                                        // BlackBerry devices.
-                                                                        'application/vnd.rim.html',
-                                                                        'text/vnd.wap.wml',
-                                                                        'application/vnd.wap.xhtml+xml'
-                                            )),
-            'HTTP_X_WAP_PROFILE'           => null,
-            'HTTP_X_WAP_CLIENTID'          => null,
-            'HTTP_WAP_CONNECTION'          => null,
-            'HTTP_PROFILE'                 => null,
-            // Reported by Opera on Nokia devices (eg. C3).
-            'HTTP_X_OPERAMINI_PHONE_UA'    => null,
-            'HTTP_X_NOKIA_GATEWAY_ID'      => null,
-            'HTTP_X_ORANGE_ID'             => null,
-            'HTTP_X_VODAFONE_3GPDPCONTEXT' => null,
-            'HTTP_X_HUAWEI_USERID'         => null,
-            // Reported by Windows Smartphones.
-            'HTTP_UA_OS'                   => null,
-            // Reported by Verizon, Vodafone proxy system.
-            'HTTP_X_MOBILE_GATEWAY'        => null,
-            // Seen this on HTC Sensation. SensationXE_Beats_Z715e.
-            'HTTP_X_ATT_DEVICEID'          => null,
-            // Seen this on a HTC.
-            'HTTP_UA_CPU'                  => array('matches' => array('ARM')),
+        'HTTP_ACCEPT'                  => array('matches' => array(
+            // Opera Mini; @reference: http://dev.opera.com/articles/view/opera-binary-markup-language/
+            'application/x-obml2d',
+            // BlackBerry devices.
+            'application/vnd.rim.html',
+            'text/vnd.wap.wml',
+            'application/vnd.wap.xhtml+xml'
+        )),
+        'HTTP_X_WAP_PROFILE'           => null,
+        'HTTP_X_WAP_CLIENTID'          => null,
+        'HTTP_WAP_CONNECTION'          => null,
+        'HTTP_PROFILE'                 => null,
+        // Reported by Opera on Nokia devices (eg. C3).
+        'HTTP_X_OPERAMINI_PHONE_UA'    => null,
+        'HTTP_X_NOKIA_GATEWAY_ID'      => null,
+        'HTTP_X_ORANGE_ID'             => null,
+        'HTTP_X_VODAFONE_3GPDPCONTEXT' => null,
+        'HTTP_X_HUAWEI_USERID'         => null,
+        // Reported by Windows Smartphones.
+        'HTTP_UA_OS'                   => null,
+        // Reported by Verizon, Vodafone proxy system.
+        'HTTP_X_MOBILE_GATEWAY'        => null,
+        // Seen this on HTC Sensation. SensationXE_Beats_Z715e.
+        'HTTP_X_ATT_DEVICEID'          => null,
+        // Seen this on a HTC.
+        'HTTP_UA_CPU'                  => array('matches' => array('ARM')),
     );
 
     /**
@@ -177,12 +177,12 @@ class Mobile_Detect
         'Pantech'       => 'PANTECH|IM-A850S|IM-A840S|IM-A830L|IM-A830K|IM-A830S|IM-A820L|IM-A810K|IM-A810S|IM-A800S|IM-T100K|IM-A725L|IM-A780L|IM-A775C|IM-A770K|IM-A760S|IM-A750K|IM-A740S|IM-A730S|IM-A720L|IM-A710K|IM-A690L|IM-A690S|IM-A650S|IM-A630K|IM-A600S|VEGA PTL21|PT003|P8010|ADR910L|P6030|P6020|P9070|P4100|P9060|P5000|CDM8992|TXT8045|ADR8995|IS11PT|P2030|P6010|P8000|PT002|IS06|CDM8999|P9050|PT001|TXT8040|P2020|P9020|P2000|P7040|P7000|C790',
         // http://www.fly-phone.com/devices/smartphones/ ; Included only smartphones.
         'Fly'           => 'IQ230|IQ444|IQ450|IQ440|IQ442|IQ441|IQ245|IQ256|IQ236|IQ255|IQ235|IQ245|IQ275|IQ240|IQ285|IQ280|IQ270|IQ260|IQ250',
-       'iMobile'        => 'i-mobile (IQ|i-STYLE|idea|ZAA|Hitz)',
+        'iMobile'        => 'i-mobile (IQ|i-STYLE|idea|ZAA|Hitz)',
         // Added simvalley mobile just for fun. They have some interesting devices.
         // http://www.simvalley.fr/telephonie---gps-_22_telephonie-mobile_telephones_.html
         'SimValley'     => '\b(SP-80|XT-930|SX-340|XT-930|SX-310|SP-360|SP60|SPT-800|SP-120|SPT-800|SP-140|SPX-5|SPX-8|SP-100|SPX-8|SPX-12)\b',
-         // Wolfgang - a brand that is sold by Aldi supermarkets.
-         // http://www.wolfgangmobile.com/
+        // Wolfgang - a brand that is sold by Aldi supermarkets.
+        // http://www.wolfgangmobile.com/
         'Wolfgang'      => 'AT-B24D|AT-AS50HD|AT-AS40W|AT-AS55HD|AT-AS45q2|AT-B26D|AT-AS50Q',
         'Alcatel'       => 'Alcatel',
         'Nintendo' => 'Nintendo 3DS',
@@ -271,9 +271,9 @@ class Mobile_Detect
         // @todo Research the Windows Tablets.
         'MSITablet' => 'MSI \b(Primo 73K|Primo 73L|Primo 81L|Primo 77|Primo 93|Primo 75|Primo 76|Primo 73|Primo 81|Primo 91|Primo 90|Enjoy 71|Enjoy 7|Enjoy 10)\b',
         // @todo http://www.kyoceramobile.com/support/drivers/
-    //    'KyoceraTablet' => null,
+        //    'KyoceraTablet' => null,
         // @todo http://intexuae.com/index.php/category/mobile-devices/tablets-products/
-    //    'IntextTablet' => null,
+        //    'IntextTablet' => null,
         // http://pdadb.net/index.php?m=pdalist&list=SMiT (NoName Chinese Tablets)
         // http://www.imp3.net/14/show.php?itemid=20454
         'SMiTTablet'        => 'Android.*(\bMID\b|MID-560|MTV-T1200|MTV-PND531|MTV-P1101|MTV-PND530)',
@@ -1273,7 +1273,7 @@ class Mobile_Detect
 
             // Kindle 3 and Fire  - Tested on the built-in WebKit browser for each
             ( $this->match('Kindle Fire') ||
-            $this->is('Kindle') && $this->version('Kindle', self::VERSION_TYPE_FLOAT)>=3.0 ) ||
+              $this->is('Kindle') && $this->version('Kindle', self::VERSION_TYPE_FLOAT)>=3.0 ) ||
 
             // Nook Color 1.4.1 - Tested on original Nook Color, not Nook Tablet
             $this->is('AndroidOS') && $this->is('NookTablet') ||
@@ -1306,7 +1306,7 @@ class Mobile_Detect
 
             //Opera Mini (5.0-6.5) - Tested on iOS 3.2/4.3 and Android 2.3
             ($this->version('Opera Mini', self::VERSION_TYPE_FLOAT)>=5.0 && $this->version('Opera Mini', self::VERSION_TYPE_FLOAT)<=7.0 &&
-            ($this->version('Android', self::VERSION_TYPE_FLOAT)>=2.3 || $this->is('iOS')) ) ||
+             ($this->version('Android', self::VERSION_TYPE_FLOAT)>=2.3 || $this->is('iOS')) ) ||
 
             // Nokia Symbian^3 - Tested on Nokia N8 (Symbian^3), C7 (Symbian^3), also works on N97 (Symbian^1)
             $this->match('NokiaN8|NokiaC7|N97.*Series60|Symbian/3') ||

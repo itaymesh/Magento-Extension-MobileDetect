@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* @package    Studioraz_MobileDetect
+* @author     Studio Raz (team@studioraz.co.il)
+* @copyright  Copyright (c) 2014 Studio Raz
+* @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+*/
+-->
+<config>
+
+    <modules>
+        <Studioraz_MobileDetect>
+            <version>0.2.1</version>
+        </Studioraz_MobileDetect>
+    </modules>
+
+    <frontend>
+        <translate>
+            <modules>
+                <Studioraz_MobileDetect>
+                    <files>
+                        <default>Studioraz_MobileDetect.csv</default>
+                    </files>
+                </Studioraz_MobileDetect>
+            </modules>
+        </translate>
+    </frontend>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <Studioraz_MobileDetect>
+                    <files>
+                        <default>Studioraz_MobileDetect.csv</default>
+                    </files>
+                </Studioraz_MobileDetect>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <global>
+        <helpers>
+            <studioraz_mobiledetect>
+                <class>Studioraz_MobileDetect_Helper</class>
+            </studioraz_mobiledetect>
+        </helpers>
+
+    </global>
+
+</config>
