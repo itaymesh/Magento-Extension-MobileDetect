@@ -1,0 +1,13 @@
+{
+    "name": "itaymesh/Magento-MobileDetect",
+    "description": "Magento MobileDetect",
+    "type": "magento-module",
+    "homepage": "https://github.com/itaymesh/Magento-MobileDetect",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Studio Raz",
+            "email": "team@studioraz.co.il"
+        }
+    ]
+}
